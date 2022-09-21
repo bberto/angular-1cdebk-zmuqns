@@ -33,6 +33,7 @@
     "@progress/kendo-angular-l10n": "latest",
     "@progress/kendo-angular-popup": "latest",
     "@progress/kendo-licensing": "latest",
+    "@progress/kendo-theme-bootstrap": "latest",
     "web-animations-js": "^2.3.2"
   },
   "devDependencies": {
