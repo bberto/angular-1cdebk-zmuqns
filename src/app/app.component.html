@@ -6,9 +6,7 @@
   [minWidth]="250"
   [width]="450"
 >
-  <p style="margin: 30px; text-align: center;">
-    Are you sure you want to continue?
-  </p>
+  <p>Are you sure you want to continue?</p>
   <kendo-dialog-actions>
     <button kendoButton (click)="close('no')">No</button>
     <button kendoButton (click)="close('yes')" themeColor="primary">Yes</button>
@@ -26,22 +24,16 @@
     ></button>
   </div>
   <div class="modal-body">
-    <p style="margin: 30px; text-align: center;">
-      Are you sure you want to continue?
-    </p>
+    <p>Are you sure you want to continue?</p>
   </div>
   <div class="modal-footer">
-    <button
-      type="button"
-      class="btn btn-outline-dark"
-      (click)="modal.close('No click')"
-    >
+    <button type="button" class="btn" (click)="modal.close('No click')">
       No
     </button>
 
     <button
       type="button"
-      class="btn btn-outline-dark"
+      class="btn btn-primary"
       (click)="modal.close('Save click')"
     >
       Yes
