@@ -1,4 +1,3 @@
-
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
  * You can add your own extra polyfills to this file.
@@ -24,21 +23,19 @@
  * Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
  * Standard animation support in Angular DOES NOT require any polyfills (as of Angular 6.0).
  */
-import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+import 'web-animations-js'; // Run `npm install --save web-animations-js`.
 
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js';  // Included with Angular CLI.
+import 'zone.js'; // Included with Angular CLI.
 
 /***************************************************************************************************
  * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
  */
 
-
 // CodeSandBox workaround for https://github.com/codesandbox/codesandbox-client/issues/6729
-import "@angular/localize/bundles/localize-init.umd.js";
+//import "@angular/localize/bundles/localize-init.umd.js";
 
 // use this import instead when codesandbox issue is fixed
-//import '@angular/localize/init';
-
+import '@angular/localize/init';
