@@ -9,7 +9,7 @@ $web-font-path: ''; //override per problema StackBlitz nell'import font
   margin: 2px;
 }
 
-@import '~bootswatch/dist/minty/variables'; // tema "Minty"
+@import '~bootswatch/dist/minty/variables'; // tema "Minty" (variabili)
 @import '~bootstrap-scss/bootstrap.scss'; // bootstrap
 @import '~@progress/kendo-theme-bootstrap/dist/all.scss'; // tema Kendo. eredita variabili bootstrap e tema kendo
 @import '~bootswatch/dist/minty/bootswatch'; // tema "Minty"
