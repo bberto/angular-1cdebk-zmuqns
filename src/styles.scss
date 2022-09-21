@@ -4,9 +4,12 @@
 
 $web-font-path: ''; //override per problema StackBlitz nell'import font
 
-@import '~bootswatch/dist/minty/variables';
+.btn,
+.k-button {
+  margin: 2px;
+}
 
-@import '~bootstrap-scss/bootstrap.scss';
-@import '~@progress/kendo-theme-bootstrap/dist/all.scss';
-
-@import '~bootswatch/dist/minty/bootswatch';
+@import '~bootswatch/dist/minty/variables'; // tema "Minty"
+@import '~bootstrap-scss/bootstrap.scss'; // bootstrap
+@import '~@progress/kendo-theme-bootstrap/dist/all.scss'; // tema Kendo. eredita variabili bootstrap e tema kendo
+@import '~bootswatch/dist/minty/bootswatch'; // tema "Minty"

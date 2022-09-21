@@ -1,53 +1,63 @@
 <div>
-  <button kendoButton themeColor="primary" (click)="open()">Open Kendo dialog</button>
-<kendo-dialog
-  title="Please confirm"
-  *ngIf="opened"
-  (close)="close('cancel')"
-  [minWidth]="250"
-  [width]="450"
->
-  <p>Are you sure you want to continue?</p>
-  <kendo-dialog-actions>
-    <button kendoButton (click)="close('no')">No</button>
-    <button kendoButton (click)="close('yes')" themeColor="primary">Yes</button>
-  </kendo-dialog-actions>
-</kendo-dialog>
+  <h1>Modali</h1>
+  <button kendoButton themeColor="primary" (click)="open()">
+    Open Kendo dialog
+  </button>
+  <kendo-dialog
+    title="Please confirm"
+    *ngIf="opened"
+    (close)="close('cancel')"
+    [minWidth]="250"
+    [width]="450"
+  >
+    <p>Are you sure you want to continue?</p>
+    <kendo-dialog-actions>
+      <button kendoButton (click)="close('no')">No</button>
+      <button kendoButton (click)="close('yes')" themeColor="primary">
+        Yes
+      </button>
+    </kendo-dialog-actions>
+  </kendo-dialog>
 </div>
 
 <div>
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-    <button
-      type="button"
-      class="btn-close"
-      aria-label="Close"
-      (click)="modal.dismiss('Cross click')"
-    ></button>
-  </div>
-  <div class="modal-body">
-    <p>Are you sure you want to continue?</p>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn" (click)="modal.close('No click')">
-      No
-    </button>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Please confirm</h4>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <p>Are you sure you want to continue?</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn" (click)="modal.close('No click')">
+        No
+      </button>
 
-    <button
-      type="button"
-      class="btn btn-primary"
-      (click)="modal.close('Save click')"
-    >
-      Yes
-    </button>
-  </div>
-</ng-template>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="modal.close('Save click')"
+      >
+        Yes
+      </button>
+    </div>
+  </ng-template>
 
-<button class="btn btn-primary" (click)="openBt(content)">Open Bootstrap modal</button>
+  <button class="btn btn-primary" (click)="openBt(content)">
+    Open Bootstrap modal
+  </button>
 </div>
 
-<h1>Componenti Bootstrap</h1>
+<hr />
+
+<div>
+<h1>Pulsanti Bootstrap</h1>
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
@@ -56,10 +66,12 @@
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-dark">Dark</button>
+</div>
 
-<br />
 <hr />
-<h1>Componenti Kendo</h1>
+
+<div>
+<h1>Pulsanti Kendo</h1>
 <button kendoButton themeColor="primary">Primary</button>
 <button kendoButton themeColor="secondary">Secondary</button>
 <button kendoButton themeColor="success">Success</button>
@@ -69,3 +81,4 @@
 <button kendoButton themeColor="light">Light</button>
 <button kendoButton themeColor="dark">Dark</button>
 <button kendoButton>Base</button>
+</div>
