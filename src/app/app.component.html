@@ -1,4 +1,5 @@
-<button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
+<div>
+  <button kendoButton themeColor="primary" (click)="open()">Open Kendo dialog</button>
 <kendo-dialog
   title="Please confirm"
   *ngIf="opened"
@@ -12,7 +13,9 @@
     <button kendoButton (click)="close('yes')" themeColor="primary">Yes</button>
   </kendo-dialog-actions>
 </kendo-dialog>
+</div>
 
+<div>
 <ng-template #content let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
@@ -41,4 +44,28 @@
   </div>
 </ng-template>
 
-<button class="btn" (click)="openBt(content)">Open bootstrap modal</button>
+<button class="btn btn-primary" (click)="openBt(content)">Open Bootstrap modal</button>
+</div>
+
+<h1>Componenti Bootstrap</h1>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<br />
+<hr />
+<h1>Componenti Kendo</h1>
+<button kendoButton themeColor="primary">Primary</button>
+<button kendoButton themeColor="secondary">Secondary</button>
+<button kendoButton themeColor="success">Success</button>
+<button kendoButton themeColor="error">Danger</button>
+<button kendoButton themeColor="warning">Warning</button>
+<button kendoButton themeColor="info">Info</button>
+<button kendoButton themeColor="light">Light</button>
+<button kendoButton themeColor="dark">Dark</button>
+<button kendoButton>Base</button>

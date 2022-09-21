@@ -1,3 +1,12 @@
-p {
-  background-color: grey;
-}
+// riguardo l'ordinamento, fare riferimento a:
+// https://bootswatch.com/help/
+// https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/#toc-installation
+
+$web-font-path: ''; //override per problema StackBlitz nell'import font
+
+@import '~bootswatch/dist/minty/variables';
+
+@import '~bootstrap-scss/bootstrap.scss';
+@import '~@progress/kendo-theme-bootstrap/dist/all.scss';
+
+@import '~bootswatch/dist/minty/bootswatch';
